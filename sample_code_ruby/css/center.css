@@ -1,0 +1,23 @@
+.horizontal{
+  background: red;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+}
+
+.hoge{
+  display: inline;
+  background-color: blue;
+}
+
+.vertical{
+  background: green;
+  width: 300px;
+  height: 300px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.fuga{
+  background: blue;
+}
