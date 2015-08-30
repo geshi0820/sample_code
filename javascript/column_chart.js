@@ -1,5 +1,8 @@
 google.load("visualization", "1", {packages:["corechart"]});
 google.setOnLoadCallback( function() {
+  el = document.getElementById('drink');
+  dd = el.dataset.description;
+  console.log(dd.spec);
   var color =["red","yellow","green","blue","purple","gold"];
   function change_color(i) {
     num = 1 + Math.floor(Math.random()*3);
@@ -22,18 +25,18 @@ google.setOnLoadCallback( function() {
   data.addColumn({type: 'string', role: 'tooltip'});
   data.addColumn({type: 'string', role: 'style'});
   data.addRows(score);
-  // data.addRows([
-  //   ['-5', 1000, "hoge", '#43a2e5'], // 一つのカラムに対して、３つの値がある。
-  //   ['11-5', 1170, "hoge", '#43a2e5'],
-  //   ['21-25', 660, "hoge", '#43a2e5'],
-  //   ['25-35', 1030, "hoge", '#43a2e5'],
-  //   ['35-41', 1023, "hoge", '#43a2e5'],
-  //   ['51-53', 2000, "hoge", '#43a2e5'],
-  //   ['61-65', 3222, "hoge", '#43a2e5'],
-  //   ['71-75', 323, "hoge", '#43a2e5'],
-  //   ['76-85', 211, "hoge", '#43a2e5'],
-  //   ['91-95', 500, "hoge", '#43a2e5']
-  // ]);
+  data.addRows([
+    ['-5', 1000, "hoge", '#43a2e5'], // 一つのカラムに対して、３つの値がある。
+    ['11-5', 1170, "hoge", '#43a2e5'],
+    ['21-25', 660, "hoge", '#43a2e5'],
+    ['25-35', 1030, "hoge", '#43a2e5'],
+    ['35-41', 1023, "hoge", '#43a2e5'],
+    ['51-53', 2000, "hoge", '#43a2e5'],
+    ['61-65', 3222, "hoge", '#43a2e5'],
+    ['71-75', 323, "hoge", '#43a2e5'],
+    ['76-85', 211, "hoge", '#43a2e5'],
+    ['91-95', 500, "hoge", '#43a2e5']
+  ]);
   var options = {
     tooltip: {isHtml: true},
     width: 800,
@@ -50,9 +53,9 @@ google.setOnLoadCallback( function() {
       gridlines: {
        color: 'transparent'
      },
-     textPosition: "none"
+     textPosition: "right"
    },
-   legend: { position: "none" }
+   legend: { position: "top" }
  };
  var chart = new google.visualization.ColumnChart(document.getElementById('gct_sample_column'));
  chart.draw(data, options);

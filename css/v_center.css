@@ -1,0 +1,6 @@
+.parent{
+  background: red;
+  display: table-cell;
+  height: 100px;
+  vertical-align: middle;
+}

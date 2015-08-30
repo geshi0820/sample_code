@@ -1,0 +1,49 @@
+.horizontal{
+  background: red;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+}
+
+.hoge{
+  display: inline;
+  background-color: blue;
+}
+
+.vertical{
+  background: green;
+  width: 300px;
+  height: 300px;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.fuga{
+  background: blue;
+}
+.square {
+    width:200px;
+    height:200px;
+    margin:20px;
+    position:relative;
+    background:rgb(100,100,255);
+}
+.square:hover {/*サンプル用。マウスhoverで影を付ける*/
+    box-shadow:3px 3px 3px rgba(0,0,0,0.7);
+}
+
+.square.cross {
+    width:25px;/*その要素自身の幅を、高さの1/4に指定。*/
+    left:37.5px;
+}
+.cross::before {
+    content:""; /*before疑似要素のcontent*/
+    display:block;  /*ブロック化*/
+    width:100%; /*幅と高さを100%に*/
+    height:100%;
+    /*90度回転。回転の基準点はデフォルトで中心なので指定しない*/
+    -moz-transform:rotate(90deg);
+    -webkit-transform:rotate(90deg);
+    /*色を変えたのはサンプルとしての分かり易さのため*/
+    background:rgb(80,80,200);
+}
