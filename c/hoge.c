@@ -11,3 +11,4 @@ VALUE rb_obj_hash(VALUE obj)
   st_index_t h = rb_hash_end(rb_hash_start(index));
   return LONG2FIX(h);
 }
+  
