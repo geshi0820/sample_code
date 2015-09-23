@@ -1,0 +1,51 @@
+.container{ width: 600px; }
+
+*,*:before,*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.geshi{
+  width: 48%;
+  float: left;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid purple;
+  margin-right: 2%;
+}
+
+.geshi--red{
+  background-color: red;
+  float: left;
+  padding-right: 0px;
+
+}
+.medium_outer{ }
+.medium_inner{ width: 48%; }
+.medium_inner--left{ float: left; }
+.medium_inner--right{ float: right; }
+
+.small_outer{ margin-top: 16px; }
+.small_inner{ width: 48%; }
+.small_inner--left{ float: left; }
+.small_inner--right{ float: right; }
+
+.micro_outer{ }
+.micro_inner{ width: 48%; margin-top: 12px; }
+.micro_inner--left{ float: left; }
+.micro_inner--right{ float: right; }
+
+.fuga{
+  border: 2px solid blue;
+  height: 100px;
+}
+
+.hoge{
+  border: 2px solid red;
+  height: 100px;
+}
+
+.piyo{
+  border: 2px solid green;
+  height: 100px;
+}
