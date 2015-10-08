@@ -16,3 +16,26 @@ p a_method(3, 2){ |x, y| x * y }
 
 hoge{ "名無し君、ブロックありますよ"}
 hoge
+
+a = lambda { p self.class}
+p a.class
+a.call
+
+x = 100
+ppp = ->(x){  p x }
+ppp.call(x)
+
+
+    def call_method(a, x)
+      result = a * x
+      p result
+    end
+
+    def call_block(a, x)
+      yield(a, x)
+    end
+
+    call_method(3,5)
+    # => 15
+
+    call_block(3, 5){ |a, x| p a * x}

@@ -18,13 +18,13 @@ end
 
 
 
-def each
-  loop{
-    x = self.pop
-    yield(x)
-  }
-end
+  def each
+    loop{
+      x = self.pop
+      yield(x)
+    }
+  end
 
 [1,2,3,4,5].each do |x|
-  p x + 100
+  p x * 10
 end

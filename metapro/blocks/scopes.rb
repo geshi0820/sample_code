@@ -1,19 +1,18 @@
-v1 = 1
-
-
-class Hoge
-
-  v2 = 2
-  p local_variables
-
-  def my_method
-    v3 = 3
-    p local_variables
-  end
-
-  p local_variables
+def event(title)
+  obj = EventCall.new(title)
+  obj.notifier
 end
 
-obj = Hoge.new
-obj.my_method
-p local_variables
+class EventCall
+  def initialize(title)
+    @title = title
+  end
+
+  def notifier
+    print "イベント名：FiNC大学"
+  end
+
+end
+
+
+event "FiNC大学" 
