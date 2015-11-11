@@ -17,14 +17,14 @@ module Kernel
 end
 
 
-# obj = 'hoge'
-# obj.class
-#
-# obj.tapp_yy
-#
-# Kernel.methods.grep(/tapp/).tapp_yy
-#
-# obj.class.ancestors.each do |hoge|
-#   hoge.tapp_yy
-#   p "C or M : #{hoge.class}"
-# end
+obj = 'hoge'
+obj.class
+
+obj.tapp_yy
+
+Kernel.methods.grep(/tapp/).tapp_yy
+
+obj.class.ancestors.each do |hoge|
+  hoge.tapp_yy
+  p "C or M : #{hoge.class}"
+end
